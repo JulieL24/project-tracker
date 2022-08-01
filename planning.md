@@ -53,9 +53,10 @@ Feature	Points	What is done	                    Depends on
 * [x] create superuser 
   * [x] python manage.py createsuperuser 
 * Feature 3
-* [ ] in projects app create Project model
-  * [ ] include name, description, members 
-  
+* [x] in projects app create Project model
+  * [x] include name, description, members
+  * Feature 4
+* [ ] Register Project model with the admin  
 
 
 
