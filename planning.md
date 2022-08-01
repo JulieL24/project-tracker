@@ -50,8 +50,11 @@ Feature	Points	What is done	                    Depends on
   * [x] "<<name>>.apps.<<UppercaseName>>Config" 
 * [x]run migrations
   * [x] python manage.py migrate  
-* [ ] create superuser 
-  * [ ] python manage.py createsuperuser 
+* [x] create superuser 
+  * [x] python manage.py createsuperuser 
+* Feature 3
+* [ ] in projects app create Project model
+  * [ ] include name, description, members 
   
 
 
