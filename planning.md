@@ -42,17 +42,17 @@ Feature	Points	What is done	                    Depends on
   * [x] source .venv/bin/activate
 * [x] Use pip freeze to generate a requirements.txt file
   * [x] pip freeze > requirements.txt 
- * [ ] create django project 
-    * [ ] django-admin startproject <<projectname>> .
-* [ ]run migrations
-  * [] python manage.py migrate  
+ * [x] create django project tracker
+    * [x] django-admin startproject <<projectname>> .
+* [x] create 3 apps accounts, projects, tasks  
+    * [x] python manage.py startapp <<name>>
+* [x] add app into settings.py installed app
+  * [x] "<<name>>.apps.<<UppercaseName>>Config" 
+* [x]run migrations
+  * [x] python manage.py migrate  
 * [ ] create superuser 
   * [ ] python manage.py createsuperuser 
-  * [ ] create 2 apps accounts and receipts 
-    * [ ] python manage.py startapp <<name>>
-* [ ] add app into settings.py installed app
-  * [ ] "<<name>>.apps.<<UppercaseName>>Config"
-
+  
 
 
 
