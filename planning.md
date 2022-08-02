@@ -71,7 +71,10 @@ Feature	Points	What is done	                    Depends on
   * [x] Create a registration directory under templates
   * [x] Create HTML template named login.html in the registration directory
   * [x] Put a post form in the login.html and other fundamental 5  
-  * [ ] in the tracker settings.py create and set LOGIN_REDIRECT_URL to the value "home" 
+  * [x] in the tracker settings.py create and set LOGIN_REDIRECT_URL to the value "home" 
+* Feature 8
+* [x] Protect the list view for the Project model so that only a person that has loggedin can access it
+* [x] Chnage the queryset of the view to filter the Project objects where members equals the logged in user  
 
 
 ## resources 
