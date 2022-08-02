@@ -92,6 +92,13 @@ Feature	Points	What is done	                    Depends on
   * [x] start_date, due_date, is_completed, project, assignee 
 * Feature 12 
 * [x] register Task model with admin so can see in Django admin site
+* Feature 13
+* [x] create a view to show details of a particular project 
+  * [x] user must be logged in to see the view
+  * [x] in the projects urls.py register the view with the path "<int: pk>/ and the name "show_project"
+  * [ ] create a template to show the details of the project and a table of its tasks  
+  * [x] update the list template to show the number of tasks for a project 
+  * [x] update the list template to have a link from the project name to the detail view for that project
 
 ## resources 
 <https://learn-2.galvanize.com/cohorts/3352/blocks/1859/content_files/build/02-django-one-shot/65-django-one-shot-00.md>
