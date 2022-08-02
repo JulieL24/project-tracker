@@ -79,6 +79,13 @@ Feature	Points	What is done	                    Depends on
 * [x] Import LogoutView in accounts urls.py
   * [x] register url patterns list wiht path "logout/" and name "logout"
 * [x] In tracker settings.py creat and set LOGOUT_REDIRECT_URL to value login so it redirects to login page  
+* Feature 10
+* [x] create sign up for the project tracker
+  * [x] import UserCreationForm 
+  * [x] use special create_user method to create a new user account from their username and password
+  * [x] use login function and redirect to "home" after created account
+  * [x] create HTML template named signup.html in the registration directory
+  * [x] put post form in the signup.html 
 
 
 ## resources 

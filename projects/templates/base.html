@@ -16,13 +16,16 @@
                         <li>
                             <a href="{% url 'list_projects' %}">Projects</a>
                         </li>
+                        <li>
+                            <a href="{% url 'logout' %}">Logout</a>
+                        </li>
                     {% else %}
-                        {% comment %} <li>
+                        <li>
                             <a href="{% url 'signup' %}">Signup</a>
                         </li>
                         <li>
                             <a href="{% url 'login' %}">Login</a>
-                        </li> {% endcomment %}
+                        </li>
                     {% endif %}
                 </ul>
             </nav>
