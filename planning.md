@@ -128,6 +128,15 @@ Feature	Points	What is done	                    Depends on
     * [x] Register that view in the tasks app for the name "complete_task" in the tasks urls.py
     * [x] you do not need to make a template for this view
     * [x] Modify the "My Tasks" view to comply with specification 
+  * Feature 18
+    * take the project description and make it Markdown enabled 
+      * [x] instaill django-markdownify package using pip command 
+        * [x] pip install django-markdownify
+      * [x] put in the INSTALLED_APPS in the tracker settings.py
+      * [x] in tracker settings.py add the configuration setting to disable sanitation  
+      * [ ] In the project detail view, load the markdownify template library 
+      * [ ] Replace the p tag and {{ project.description }} in the Project detail view with this code {{ project.description|markdownify }}
+      * [ ] use pip freeze to update requirements.txt 
 
 ## resources 
 <https://learn-2.galvanize.com/cohorts/3352/blocks/1859/content_files/build/02-django-one-shot/65-django-one-shot-00.md>
