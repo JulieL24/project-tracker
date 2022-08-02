@@ -58,12 +58,20 @@ Feature	Points	What is done	                    Depends on
   * Feature 4
 * [x] Register Project model with the admin
   * Feature 5
-* [ ] create a list view for project model 
-* [ ] register the projects paths with tracker
-  * [ ] path "" and the name "list_projects" in projects.urls.py
-* [ ] create template for view
-* [ ]   
-
+* [x] create a list view for project model 
+* [x] register the projects paths with tracker
+  * [x] path "" and the name "list_projects" in projects.urls.py
+* [x] create template for list view
+* Feature 6
+* [x] create a redirect view in tracker urls.py to redirect to project list
+* Feature 7
+* [x] Register the LoginView in accounts urls.py with "login/" path 
+  * [x] Include url patterns form the accounts app in the tracker project with prefix "accounts/" 
+  * [x] Create templates directory under accounts
+  * [x] Create a registration directory under templates
+  * [x] Create HTML template named login.html in the registration directory
+  * [x] Put a post form in the login.html and other fundamental 5  
+  * [ ] in the tracker settings.py create and set LOGIN_REDIRECT_URL to the value "home" 
 
 
 ## resources 
