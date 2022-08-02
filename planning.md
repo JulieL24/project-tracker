@@ -96,9 +96,17 @@ Feature	Points	What is done	                    Depends on
 * [x] create a view to show details of a particular project 
   * [x] user must be logged in to see the view
   * [x] in the projects urls.py register the view with the path "<int: pk>/ and the name "show_project"
-  * [ ] create a template to show the details of the project and a table of its tasks  
+  * [x] create a template to show the details of the project and a table of its tasks  
   * [x] update the list template to show the number of tasks for a project 
   * [x] update the list template to have a link from the project name to the detail view for that project
+* Feature 14
+* [x] Create a create view for Project model  
+  * [x] Show name, description, and members properties in the form and handle the form submission to create a new Project
+  * [x] person must be logged in to see the view
+  * [ ] should redirect to detail page for that project after creating project
+  * [ ] Register the view path "create/" in the projects urls.py and name "create_project"
+  * [ ] create HTML template for create
+  * [ ] add a link to the list view for the Project that navigates to the new create view 
 
 ## resources 
 <https://learn-2.galvanize.com/cohorts/3352/blocks/1859/content_files/build/02-django-one-shot/65-django-one-shot-00.md>
