@@ -1,20 +1,20 @@
 Feature	Points	What is done	                    Depends on
-1	    5	    Install dependencies	
-2	    7	    Set up the Django project and apps	1
-3	    12	    The Project model	                2
-4	    1	    Registering Project in the admin	3
-5	    9	    The Project list view	            3
-6	    2	    Default path redirect	            5
-7	    10	    Login page	                        2
-8	    3	    Require login for Project list view	5, 7
-9	    4	    Logout page	                        7
+1	      5	    Install dependencies	
+2	      7	    Set up the Django project and apps	1
+3	      12	    The Project model	                2
+4	      1	    Registering Project in the admin	  3
+5	      9	    The Project list view	              3
+6	      2	    Default path redirect	              5
+7	      10	    Login page	                      2
+8	      3	    Require login for Project list view	5, 7
+9	      4	    Logout page	                        7
 10	    10	    Sign up page	                    2
-11	    20	    The Task model	                    3
-12	    1	    Registering Task in the admin	    11
-13	    15	    The Project detail view	            12
-14	    11	    The Project create view	            2
+11	    20	    The Task model	                  3
+12	    1	    Registering Task in the admin	      11
+13	    15	    The Project detail view	          12
+14	    11	    The Project create view	          2
 15	    13	    The Task create view	            11
-16	    7	    Show "My Tasks" list view	        11
+16	    7	    Show "My Tasks" list view	          11
 17	    11	    Completing a task	                16
 18	    1	    Markdownify	                        17
 19	    2	    Navigation	                        5, 7, 9, 10, 16
@@ -116,6 +116,11 @@ Feature	Points	What is done	                    Depends on
     * [x] include url patterns from the tasks app in the tracker project with prefix "tasks/"
     * [x] create template for create task view 
     * [x] add link to create a task from the project detail page
+  * Feature 16
+  * [x] Create list view for the task model with the object filtered so that the person only sees the tasks assigned to them by filtering with the assignee equal to currently logged in user
+  * [x] the view must only be accessed by people that are logged in 
+  * [x] register view in the tasks app for path "mine/" and name "show_my_tasks" in tasks urls.py
+  * [x] create html template for list view 
 
 ## resources 
 <https://learn-2.galvanize.com/cohorts/3352/blocks/1859/content_files/build/02-django-one-shot/65-django-one-shot-00.md>
