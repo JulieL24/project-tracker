@@ -74,7 +74,11 @@ Feature	Points	What is done	                    Depends on
   * [x] in the tracker settings.py create and set LOGIN_REDIRECT_URL to the value "home" 
 * Feature 8
 * [x] Protect the list view for the Project model so that only a person that has loggedin can access it
-* [x] Chnage the queryset of the view to filter the Project objects where members equals the logged in user  
+* [x] Chnage the queryset of the view to filter the Project objects where members equals the logged in user
+* Feature 9
+* [x] Import LogoutView in accounts urls.py
+  * [x] register url patterns list wiht path "logout/" and name "logout"
+* [x] In tracker settings.py creat and set LOGOUT_REDIRECT_URL to value login so it redirects to login page  
 
 
 ## resources 
