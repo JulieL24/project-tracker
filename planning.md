@@ -85,7 +85,11 @@ Feature	Points	What is done	                    Depends on
   * [x] use special create_user method to create a new user account from their username and password
   * [x] use login function and redirect to "home" after created account
   * [x] create HTML template named signup.html in the registration directory
-  * [x] put post form in the signup.html 
+  * [x] put post form in the signup.html
+  * Feature 11 
+  * [ ] Create a Task model in tasks app
+  * [ ] task model should have the following attributes: 
+    * [ ] start_date, due_date, is_completed, project, assignee 
 
 
 ## resources 
