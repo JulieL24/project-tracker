@@ -56,7 +56,13 @@ Feature	Points	What is done	                    Depends on
 * [x] in projects app create Project model
   * [x] include name, description, members
   * Feature 4
-* [ ] Register Project model with the admin  
+* [x] Register Project model with the admin
+  * Feature 5
+* [ ] create a list view for project model 
+* [ ] register the projects paths with tracker
+  * [ ] path "" and the name "list_projects" in projects.urls.py
+* [ ] create template for view
+* [ ]   
 
 
 
