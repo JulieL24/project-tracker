@@ -121,6 +121,13 @@ Feature	Points	What is done	                    Depends on
   * [x] the view must only be accessed by people that are logged in 
   * [x] register view in the tasks app for path "mine/" and name "show_my_tasks" in tasks urls.py
   * [x] create html template for list view 
+  * Feature 17
+  * Allow a person to update the status on one of their assigned tasks from incomplete to complete
+    * [x] Create an update view for the Task model that only is concerned with is_complete field
+    * [x] When view successfully handles a submission, should redirect to "show_my_tasks" URL path "My Tasks" view (success_url) property on a view class
+    * [x] Register that view in the tasks app for the name "complete_task" in the tasks urls.py
+    * [x] you do not need to make a template for this view
+    * [x] Modify the "My Tasks" view to comply with specification 
 
 ## resources 
 <https://learn-2.galvanize.com/cohorts/3352/blocks/1859/content_files/build/02-django-one-shot/65-django-one-shot-00.md>
