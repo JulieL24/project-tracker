@@ -103,10 +103,19 @@ Feature	Points	What is done	                    Depends on
 * [x] Create a create view for Project model  
   * [x] Show name, description, and members properties in the form and handle the form submission to create a new Project
   * [x] person must be logged in to see the view
-  * [ ] should redirect to detail page for that project after creating project
-  * [ ] Register the view path "create/" in the projects urls.py and name "create_project"
-  * [ ] create HTML template for create
-  * [ ] add a link to the list view for the Project that navigates to the new create view 
+  * [x] should redirect to detail page for that project after creating project
+  * [x] Register the view path "create/" in the projects urls.py and name "create_project"
+  * [x] create HTML template for create
+  * [x] add a link to the list view for the Project that navigates to the new create view 
+  * Feature 15
+  * [x] Create a create view for task model
+    * [x] show a form to create an instnace of the Task model for all properties except the is_completed field 
+    * [x] need to be logged in to access 
+    * [x] redirects to detail page of the task's project after creating
+    * [x] register the view in tasks app for the path "create/" and the name "creaate_task"
+    * [x] include url patterns from the tasks app in the tracker project with prefix "tasks/"
+    * [x] create template for create task view 
+    * [x] add link to create a task from the project detail page
 
 ## resources 
 <https://learn-2.galvanize.com/cohorts/3352/blocks/1859/content_files/build/02-django-one-shot/65-django-one-shot-00.md>

@@ -30,9 +30,5 @@ class ProjectCreateView(LoginRequiredMixin, CreateView):
     fields = ["name", "description", "members"]
     template_name = "projects/create_project.html"
 
-    def form_valid(self, form):
-        new_project = form.save(commit=False)
-        # new_project.members = self.request.user
-        new_project.save()
-        form.save_m2m()
-        return redirect("show_project", pk=new_project.pk)
+    def get_success_url(self):
+        return reverse_lazy("show_project", args=[self.object.pk])
