@@ -86,11 +86,12 @@ Feature	Points	What is done	                    Depends on
   * [x] use login function and redirect to "home" after created account
   * [x] create HTML template named signup.html in the registration directory
   * [x] put post form in the signup.html
-  * Feature 11 
-  * [ ] Create a Task model in tasks app
-  * [ ] task model should have the following attributes: 
-    * [ ] start_date, due_date, is_completed, project, assignee 
-
+* Feature 11 
+* [x] Create a Task model in tasks app
+* [x] task model should have the following attributes: 
+  * [x] start_date, due_date, is_completed, project, assignee 
+* Feature 12 
+* [x] register Task model with admin so can see in Django admin site
 
 ## resources 
 <https://learn-2.galvanize.com/cohorts/3352/blocks/1859/content_files/build/02-django-one-shot/65-django-one-shot-00.md>
