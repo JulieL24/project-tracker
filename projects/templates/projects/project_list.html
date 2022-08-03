@@ -8,28 +8,27 @@
                 <a href="{% url 'create_project' %}">Create a new project</a>
             </p>
             {% if project_list|length == 0 %}
-                <p>You are not assigned to any projects</p>
+            <p>You are not assigned to any projects</p>
             {% else %}
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Number of tasks</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for item in project_list %}
-                            <tr>
-                                <td>
-                                    <a href="{% url 'show_project' item.pk %}">{{ item.name }}</a>
-                                </td>
-                                <td>{{ item.tasks.all|length }}</td>
-                            </tr>
-                        {% endfor %}
-            {% endif %}
-
-        </tbody>
-    </table>
-    </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Number of tasks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in project_list %}
+                    <tr>
+                        <td>
+                            <a href="{% url 'show_project' item.pk %}">{{ item.name }}</a>
+                        </td>
+                        <td>{{ item.tasks.all|length }}</td>
+                    </tr>
+                    {% endfor %}
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
     </main>
 {% endblock content %}
