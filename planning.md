@@ -134,10 +134,13 @@ Feature	Points	What is done	                    Depends on
         * [x] pip install django-markdownify
       * [x] put in the INSTALLED_APPS in the tracker settings.py
       * [x] in tracker settings.py add the configuration setting to disable sanitation  
-      * [ ] In the project detail view, load the markdownify template library 
-      * [ ] Replace the p tag and {{ project.description }} in the Project detail view with this code {{ project.description|markdownify }}
-      * [ ] use pip freeze to update requirements.txt 
-
+      * [x] In the project detail view, load the markdownify template library 
+      * [x] Replace the p tag and {{ project.description }} in the Project detail view with this code {{ project.description|markdownify }}
+      * [x] use pip freeze to update requirements.txt  
+  * Feature 19 
+    * In this feature, you'll add some navigation to the Web application
+    *  [x] "My tasks", "My Projects", "logout" page should be on top of page when user logged in
+    *  [x] "login" and "signup" should be on top of page if not loggedin
 ## resources 
 <https://learn-2.galvanize.com/cohorts/3352/blocks/1859/content_files/build/02-django-one-shot/65-django-one-shot-00.md>
 
