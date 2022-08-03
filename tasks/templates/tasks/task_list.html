@@ -20,23 +20,23 @@
                                 <td>{{ task.name }}</td>
                                 <td>{{ task.start_date }}</td>
                                 <td>{{ task.due_date }}</td>
-                                <td>{% if task.is_completed %} 
-                                    Done 
-                                    {% elif task.is_completed == False %}
+                                <td>{% if task.is_completed %}
+                                    Done
+                                {% elif task.is_completed == False %}
                                     <form method="post" action="{% url 'complete_task' task.pk %}">
                                         {% csrf_token %}
                                         <input type="hidden" name="is_completed" value="True">
                                         <button>Complete</button>
-                                      </form> 
-                                    {% endif %}
-                                </td> 
+                                    </form>
+                                {% endif %}
+                                </td>
                             </tr>
                         {% endfor %}
-                        {% else %} 
-                        <p>You have no tasks</p>
-                        {% endif %}
-                    </tbody>
-                </table>
-        </div>
+            {% else %}
+                <p>You have no tasks</p>
+            {% endif %}
+        </tbody>
+    </table>
+    </div>
     </main>
 {% endblock content %}
